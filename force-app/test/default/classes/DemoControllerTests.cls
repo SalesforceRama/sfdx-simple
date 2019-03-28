@@ -4,7 +4,7 @@
  * @Author             : ChangeMeIn@UserSettingsUnder.SFDoc
  * @Group              : 
  * @Last Modified By   : ChangeMeIn@UserSettingsUnder.SFDoc
- * @Last Modified On   : 28-3-2019 14:12:32
+ * @Last Modified On   : 28-3-2019 14:28:11
  * @Modification Log   : 
  *==============================================================================
  * Ver         Date                     Author      		      Modification
@@ -15,8 +15,8 @@
 @isTest
 private class DemoControllerTests {
     @isTest static void testConstructor() {
-    	Contact contact1 = new Contact(LastName='Smith');
-    	insert contact1;
+    	Contact contact = new Contact(LastName='Smith');
+    	insert contact;
 
     	Test.setCurrentPage(Page.DemoPage);   	
     	ApexPages.currentPage().getParameters().put('lastName', 'Smith');
